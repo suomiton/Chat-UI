@@ -1,0 +1,846 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"HTM",
+				"HTMLElement	interface"
+			],
+			[
+				"respo",
+				"responseTimes"
+			],
+			[
+				"list",
+				"list-style-type: "
+			],
+			[
+				"mar",
+				"margin-top: "
+			],
+			[
+				"pad",
+				"padding-bottom: "
+			],
+			[
+				"bor",
+				"border: "
+			],
+			[
+				"font-",
+				"font-size: "
+			],
+			[
+				"margin",
+				"margin-right: "
+			],
+			[
+				"text",
+				"text-align: "
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"marg",
+				"margin-left: "
+			],
+			[
+				"padd",
+				"padding-left: "
+			],
+			[
+				"font",
+				"font-weight: "
+			],
+			[
+				"border",
+				"border-bottom: "
+			],
+			[
+				"stop",
+				"stopPropagation"
+			],
+			[
+				"bord",
+				"border-bottom: "
+			],
+			[
+				"paddi",
+				"padding: "
+			],
+			[
+				"back",
+				"background-color: "
+			],
+			[
+				"margi",
+				"margin-left: "
+			],
+			[
+				"lis",
+				"list-style-type: "
+			],
+			[
+				"ack",
+				"background-color: "
+			],
+			[
+				"pa",
+				"padding-top: "
+			],
+			[
+				"text-",
+				"text-align: "
+			],
+			[
+				"di",
+				"displayNavigation"
+			],
+			[
+				"lef",
+				"leftOffset"
+			],
+			[
+				"menu",
+				"menuItem"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"dis",
+				"disclaimer-color"
+			],
+			[
+				"te",
+				"text-transform: "
+			],
+			[
+				"forma",
+				"formatted_month"
+			],
+			[
+				"min",
+				"min-height: "
+			],
+			[
+				"bar",
+				"background-color: "
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"ligh",
+				"lighten	Sass-function"
+			],
+			[
+				"list-",
+				"list-style-type: "
+			],
+			[
+				"re",
+				"repeat"
+			],
+			[
+				"Test",
+				"TestApp"
+			],
+			[
+				"ser",
+				"serif-font"
+			],
+			[
+				"wind",
+				"windowHeight"
+			],
+			[
+				"win",
+				"windowHeight"
+			],
+			[
+				"fade",
+				"fadeOut"
+			],
+			[
+				"foo",
+				"footerY"
+			],
+			[
+				"footer",
+				"footerY"
+			],
+			[
+				"scrl",
+				"scrollTop"
+			],
+			[
+				"togg",
+				"toggleTitle"
+			],
+			[
+				"to",
+				"toggleTitle"
+			],
+			[
+				"carou",
+				"carousel_items_length"
+			],
+			[
+				"mo",
+				"mobileSearchVisible"
+			],
+			[
+				"mobi",
+				"mobileNavVisible"
+			],
+			[
+				"break",
+				"breakpoint-wide"
+			],
+			[
+				"tet",
+				"text-align: "
+			],
+			[
+				"max-",
+				"max-width: "
+			],
+			[
+				"n",
+				"none"
+			],
+			[
+				"car",
+				"carousel-inner"
+			],
+			[
+				"tra",
+				"transition: "
+			],
+			[
+				"lif",
+				"liftup_items"
+			],
+			[
+				"fir",
+				"first_block_contents"
+			],
+			[
+				"first",
+				"first_img_src"
+			],
+			[
+				"lift",
+				"liftup_items"
+			],
+			[
+				"liftup",
+				"liftup_items_nids"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"fo",
+				"foreach	foreach …"
+			],
+			[
+				"carousel_",
+				"carousel_items"
+			],
+			[
+				"path",
+				"paths"
+			],
+			[
+				"ma",
+				"margin-left: "
+			],
+			[
+				"vendo",
+				"vendorRoot"
+			],
+			[
+				"padi",
+				"padding-right: "
+			],
+			[
+				"dark",
+				"dark-blue"
+			],
+			[
+				"backgr",
+				"background-image"
+			],
+			[
+				"lay",
+				"layoutPath"
+			],
+			[
+				"master",
+				"masterAssetsPath"
+			],
+			[
+				"layou",
+				"layoutPath"
+			],
+			[
+				"maste",
+				"masterAssetsPath"
+			],
+			[
+				"hake",
+				"hakemusAssetsPath"
+			],
+			[
+				"vend",
+				"vendorScripts"
+			],
+			[
+				"get",
+				"getVendorScripts"
+			],
+			[
+				"mas",
+				"masterAssetsPath"
+			],
+			[
+				"bowe",
+				"bowerPath"
+			],
+			[
+				"hak",
+				"hakemusStyles"
+			],
+			[
+				"layo",
+				"layoutMasterScripts"
+			],
+			[
+				"div",
+				"div	Tag"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"darke",
+				"darkest-grey"
+			],
+			[
+				"bo",
+				"border-left"
+			],
+			[
+				"styl",
+				"styleFilter"
+			],
+			[
+				"bower",
+				"bowerComponents"
+			],
+			[
+				"inje",
+				"injectScript"
+			],
+			[
+				"angu",
+				"angularFilesort"
+			],
+			[
+				"vote",
+				"votedFrom"
+			],
+			[
+				"data",
+				"dataString"
+			],
+			[
+				"view",
+				"viewValue"
+			],
+			[
+				"che",
+				"checkNumber"
+			],
+			[
+				"application",
+				"applicationModule"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"http",
+				"httpBackend"
+			],
+			[
+				"htt",
+				"httpBackend"
+			],
+			[
+				"bae",
+				"baseUrl"
+			],
+			[
+				"base",
+				"baseUrl"
+			],
+			[
+				"local",
+				"localStorageValue"
+			],
+			[
+				"applica",
+				"applicationService"
+			],
+			[
+				"_",
+				"_applicationService_"
+			],
+			[
+				"appli",
+				"applicationService"
+			],
+			[
+				"require",
+				"requireDir"
+			],
+			[
+				"drop",
+				"dropRow"
+			],
+			[
+				"On",
+				"onDragEnd"
+			],
+			[
+				"onD",
+				"onDrop"
+			],
+			[
+				"onDra",
+				"onDragOver"
+			],
+			[
+				"on",
+				"onDragStart"
+			],
+			[
+				"app",
+				"applicationScripts"
+			],
+			[
+				"even",
+				"eventStream"
+			],
+			[
+				"noti",
+				"notification"
+			],
+			[
+				"notif",
+				"Notification"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!doctype html>\n<html lang=\"en\" data-framework=\"typescript\">\n	<head>\n		<meta charset=\"utf-8\">\n		<title>React • ChatUI</title>		\n	</head>\n	<body>\n		<header></header>\n		<section class=\"todoapp\"></section>\n		<footer class=\"info\">			\n		</footer>\n\n		<script src=\"https://fb.me/react-15.1.0.min.js\"></script>\n		<script src=\"https://fb.me/react-dom-15.1.0.min.js\"></script>\n\n		\n		<script type=\"text/javascript\" src=\"node_modules/react/dist/react-with-addons.js\"></script>\n		<script type=\"text/javascript\" src=\"node_modules/classnames/index.js\"></script>\n		<script type=\"text/javascript\" src=\"node_modules/director/build/director.js\"></script>\n\n		<script type=\"text/javascript\" src=\"static/bundle.js\"></script>\n	</body>\n</html>\n",
+			"file": "index.html",
+			"file_size": 678,
+			"file_write_time": 1466344512000000,
+			"settings":
+			{
+				"buffer_size": 720,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 227.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 403.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/suomiton/projects/gits/chatui/index.js",
+		"/Users/suomiton/projects/gits/todomvc/examples/typescript-react/js/app.tsx",
+		"/Users/suomiton/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/suomiton/Library/Application Support/Sublime Text 2/Packages/User/Default ().sublime-keymap",
+		"/Users/suomiton/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/Users/suomiton/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/suomiton/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Library/WebServer/WebRoot/HomeInstead/web/sites/all/themes/HomeInstead/templates/node--wide_lift_up.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/web/sites/all/themes/HomeInstead/templates/node--content_page.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/web/sites/all/themes/HomeInstead/templates/node--article.tpl.php",
+		"/private/var/folders/q0/401r_yfx5zggwl5gznhl_yvh0000gn/T/fz3temp-1/.htaccess",
+		"/private/var/folders/q0/401r_yfx5zggwl5gznhl_yvh0000gn/T/fz3temp-1/html.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/web/sites/all/themes/HomeInstead/app/scripts/hisc-ui.js",
+		"/Library/WebServer/WebRoot/HomeInstead/web/sites/all/themes/HomeInstead/app/scripts/franchise-points.js",
+		"/Library/WebServer/WebRoot/HomeInstead/package.json",
+		"/Library/WebServer/WebRoot/HomeInstead/gulpfile.js",
+		"/private/var/folders/q0/401r_yfx5zggwl5gznhl_yvh0000gn/T/fz3temp-1/ui.js",
+		"/Library/WebServer/WebRoot/HomeInstead/app/sass/pages/_franchisepage.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/app/sass/common/_variables.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/app/sass/components/_footer.scss",
+		"/Users/suomiton/Desktop/hisc-backup/modules/views/modules/system/views_handler_argument_file_fid.inc",
+		"/Library/WebServer/WebRoot/HomeInstead/homeinstead.info",
+		"/Library/WebServer/WebRoot/HomeInstead/templates/html.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/static/styles.css",
+		"/Library/WebServer/WebRoot/HomeInstead/.htaccess",
+		"/Library/WebServer/WebRoot/HomeInstead/.htaccess-stage",
+		"/Users/suomiton/projects/gits/AngularJS-FBIDVA/FinBId.Validation.js",
+		"/private/etc/php.ini",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/default/files/static/test.css",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/default/files/.htaccess",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/homeinstead.info",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/scripts/hisc-ui.js",
+		"/Volumes/Dev/Solita/Veho/gulp/package.json",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/npm-debug.log",
+		"/Volumes/Dev/Solita/Veho/gulp/gulp-tasks/solita-template.js",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/package.json",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/gulpfile.js",
+		"/Users/suomiton/.bash_profile",
+		"/Users/suomiton/.bash_profile-old",
+		"/Users/suomiton/.bashrc",
+		"/Users/suomiton/node_modules/.bin:/usr/local/bin:/usr/local/sbin:~/local/bin:/usr/local/mysql/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/ruby/2.0.0-p0/bin",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/layouts/sub-page-panel/sub-page-panel.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/panels/_subpagepanel.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/pages/_franchisepage.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/components/_header.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/pages/_officelistingpage.scss",
+		"/Volumes/share/The Wire Season 1, 2, 3, 4 & 5 Complete Collection DVD Box Set HDTV + Extras (Interviews, Commentaries, Bonus Features etc.)/Season 1/The Wire Season 1 Episode 03 - The Buys.srt",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/modules/webform_node_value/webform_node_value.module",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/common/_variables.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/pages/_landingpage.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/components/_footer.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/templates/node--small_lift_up.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/pages/_wideliftup.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/templates/page.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/templates/node--article.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/pages/_articlepage.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/common/_content.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/pages/_contentpage.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/scripts/gmaps.js",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/scripts/franchise-points.js",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/styles.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/templates/html.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/pages/_opencareerspage.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/common/_forms.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/common/_drupaloverrides.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/components/_pagetop.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/pages/_recommendationslistingpage.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/pages/_smallliftup.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/templates/search-block-form.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/components/_search.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/template.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/pages/_officepage.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/panels/_findhomecare.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/panels/_twocolpanel.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/layouts/two-col-panel/two-col-panel.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/templates/node--office_page.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/layouts/two-col-panel/twocol.inc",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/views/_view-show-recommendation.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/templates/node--wide_lift_up.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/pages/_webformpage.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/views/_view-article-listing.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/views/_view-aihealueet-tags-listing.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/.users",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/templates/search-results.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/templates/node--content_page.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/pages/_searchpage.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/modules/search/search.module",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/layouts/sub-page-panel/sub-page-panel.inc",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/modules/panels/plugins/layouts/twocol_stacked/twocol_stacked.inc",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/templates/node--landing_page.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/components/_panels.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/layouts/front-page-panel/front-page-panel.inc",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/layouts/front-page-panel/onecol.inc",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/pages/_findhomecare.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/theme-settings.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/templates/panels-pane.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/templates/node.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/themes/bartik/template.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/components/_pagetop.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/components/_header.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/common/_variables.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/common/_content.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/common/_drupaloverrides.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/pages/_contentpage.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/components/_footer.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/pages/_landingpage.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/templates/field.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/templates/_Layout.cshtml",
+		"/Library/WebServer/WebRoot/HomeInstead/.gitignore",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/bower.json",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/.bowerrc",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/templates/node--contentpage.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/templates/node--landingpage.tpl.php",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/common/_global.scss",
+		"/Library/WebServer/WebRoot/HomeInstead/modules/system/html.tpl.php",
+		"/Library/WebServer/WebRoot/tavarataksit/sites/all/themes/Tavarataksit/template.php",
+		"/Library/WebServer/WebRoot/tavarataksit/sites/all/themes/Tavarataksit/tavarataksit.info",
+		"/Library/WebServer/WebRoot/HomeInstead/sites/all/themes/HomeInstead/app/sass/_config.scss",
+		"/Users/suomiton/projects/idcontrol/Neonella HenkilokorttiNET 2.0/2.0/app/Controller/UsersController.php",
+		"/Library/WebServer/WebRoot/idcontrol/app/Config/database.php",
+		"/Users/suomiton/projects/gits/ekmvp-api/ekmvp-api/server.js",
+		"/Users/suomiton/projects/Gits/express/components/TestApp.react",
+		"/Users/suomiton/projects/gits/express/static/js/bundle.js",
+		"/Users/suomiton/local/bin/npm",
+		"/Users/suomiton/node_modules/.bin:/usr/local/bin:/usr/local/sbin:~/local/bin:/usr/local/mysql/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+		"/Users/suomiton/projects/Gits/express/package.json",
+		"/Users/suomiton/projects/gits/ghost-cms-site/content/themes/woodland/package.json",
+		"/Users/suomiton/projects/gits/syntaxofthebeard/config.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".mobile-visible",
+			"buffer",
+			"memory",
+			"error",
+			"admin_paths_alter",
+			".show-menu",
+			"&nbsp;",
+			"$grid-gutter-width",
+			"tavarataksit",
+			"tava",
+			"api.key",
+			"api",
+			"restful",
+			"rest",
+			".post-comments",
+			"max-height",
+			"@media (max-height:",
+			"@media",
+			"height",
+			"max-hei",
+			"max-height",
+			"@media",
+			".cover",
+			"max-height:430px",
+			"max-height: 430px",
+			"max-height:430px",
+			"font-weight: 500",
+			"roboto",
+			".post",
+			".author",
+			"li",
+			"ol li",
+			".site-",
+			".readingTime",
+			"					",
+			"file",
+			"test_theme_",
+			"virtualhost",
+			"/images",
+			"includeSource",
+			".toast-",
+			".toast",
+			"PageMetaDataDescriptorAttribute",
+			"modelChildrenToButtonList",
+			"resize",
+			"_ViewStart",
+			"mock"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<a href=\"http://www.homeinstead.com.au/\" target=\"_blank\">&nbsp;</a>",
+			"homeinstead",
+			"tavarataksit_theme_"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 720,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								373,
+								373
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"fran",
+				"sites/all/themes/HomeInstead/app/scripts/franchise-points.js"
+			],
+			[
+				"wideli",
+				"sites/all/themes/HomeInstead/app/sass/pages/_wideliftup.scss"
+			],
+			[
+				"landin",
+				"sites/all/themes/HomeInstead/app/sass/pages/_landingpage.scss"
+			],
+			[
+				"styles",
+				"sites/all/themes/HomeInstead/app/sass/styles.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 216.0,
+	"status_bar_visible": true
+}
