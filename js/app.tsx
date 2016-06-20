@@ -3,28 +3,20 @@ import * as ReactDOM from "react-dom";
 
 import { ALL_CHATS, ACTIVE_CHAT, ENTER_KEY, ESCAPE_KEY, CHAT_DATA } from "./constants";
 import { ChatModel } from "./chatModel";
-import { ChatListing } from "./chatListing";
+import { ChatView } from "./chatView";
 
 declare var Router;
 
 class ChatUI extends React.Component<IAppProps, IAppState> {
-  public state : IAppState;  
+  public state : IAppState;      
 
   constructor(props : IAppProps) {
     super(props);
     this.state = {
-      nowShowing: ALL_CHATS      
-    };
+      nowShowing: ALL_CHATS,
+      chatId: null      
+    };        
   }
-
-  /*public componentDidMount() {
-    var setState = this.setState;
-    var router = Router({
-      '/': setState.bind(this, {nowShowing: ALL_CHATS}),
-      '/active': setState.bind(this, {nowShowing: ACTIVE_CHAT}),      
-    });
-    router.init('/');
-  }*/
 
   public handleNewTodoKeyDown(event : __React.KeyboardEvent) {
     if (event.keyCode !== ENTER_KEY) {
@@ -39,10 +31,10 @@ class ChatUI extends React.Component<IAppProps, IAppState> {
       //this.props.model.addMessage(val, 'You');
       ReactDOM.findDOMNode<HTMLInputElement>(this.refs["newField"]).value = '';
     }
-  }
+  }  
 
-  public onChatSelect(chatToSelect: IChatModel, name: string): void {    
-    this.setState({ nowShowing: name });
+  public onStateChange(state: IAppState) {    
+    this.setState(state);    
   }
 
   public render() {
@@ -50,38 +42,44 @@ class ChatUI extends React.Component<IAppProps, IAppState> {
     let footer;    
     let main;    
 
-    const chatItems = this.props.chatCollection.map((chat, index) => {
-      return (
-        <ChatListing
-          key={index}
-          name={chat.name}
-          messages={chat.messages}
-          onSelect={this.onChatSelect.bind(this, chat.name)}
-          />
-      );
-    });
+    var chatView = (  
+      <ChatView key={1} chatCollection={this.props.chatCollection} state={this.state} onStateChange={this.onStateChange.bind(this)} />
+    );
 
-    header = (
+    if(this.state.chatId) {
+      header = (
+        <header className="chat-header">
+          <span className="back-button"><button type="button" class="btn" onClick={this.handleBackButton.bind(this)}>Back</button></span>
+          <span className="chat-title">{this.state.chatId}</span>
+          <span>TODO participants</span>          
+        </header>
+      );
+    } else {
+      header = (
         <header>
           <h1>Awesome Chat UI</h1>
         </header>
-      );
+      );  
+    }
+      
 
-    main = (
-        <div>
-          <ul className="chat-collection">
-            {chatItems}
-          </ul>
-          <input ref="newField" className="new-message" placeholder="Message!?" onKeyDown={ e => this.handleNewTodoKeyDown(e) } autoFocus={true} />
+    if(this.state.chatId) {
+      footer = (
+        <div className="input-message">
+          <div className="control">
+            <input type="text" className="control-input" />
+          </div>
+          <div className="control-button"> 
+            <button type="button" className="btn">Submit</button>
+          </div>
         </div>
-      );    
-
-
+      );
+    }
 
     return (
-      <div className="main">
+      <div className="container-fluid main">
         {header}
-        {main}
+        {chatView}
         {footer}
       </div>
     );

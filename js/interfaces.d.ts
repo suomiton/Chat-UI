@@ -1,4 +1,5 @@
-interface IMessage {    
+interface IMessage { 
+  key?: number;   
   author: string;
   message: string,
   timestamp: Date
@@ -15,24 +16,30 @@ interface IChatFooterProps {
   count : number;
 }
 
-
 interface IChatModel {    
   name: string;
   messages: Array<IMessage>;
-  addMessage(text: string, author: string): void;
+  addMessage: (text: string, author: string) => void;
 }
 
 interface IAppProps {
   chatCollection: Array<IChatModel>;
+  state?: IAppState;
+  onStateChange?: (state: IAppState) => void;
 }
 
 interface IChatListing {
   key: number;
-  name: string;
-  messages: Array<IMessage>;  
-  onSelect: (name: string) => void;
+  name: string;  
+  onSelect: (name: string) => void;  
 }
 
 interface IAppState { 
   nowShowing?: string;
+  chatId?: string;
+}
+
+interface IMessageView {  
+  key: number;
+  message: IMessage
 }

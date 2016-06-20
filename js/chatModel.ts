@@ -6,7 +6,9 @@ class ChatModel implements IChatModel {
 
 	constructor(name: string) {		
 		this.name = name;		
-		this.messages = new Array<IMessage>();		
+		this.messages = new Array<IMessage>();	
+		this.messages.push(new Message('Lorem ipsum dolor', 'Toni'));
+		this.messages.push(new Message('Lorem ipsum dolor 2', 'Muusa'));	
 	}	
   	
   	addMessage(text: string, author: string): void {

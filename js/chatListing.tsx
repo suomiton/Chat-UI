@@ -4,6 +4,7 @@ import * as ReactDOM from "react-dom";
 class ChatListing extends React.Component<IChatListing, {}> {
 	constructor(props: IChatListing) {
 		super(props);
+		console.log(props);
 	}
 
 	public handleClick(event: __React.MouseEvent) {
@@ -12,8 +13,8 @@ class ChatListing extends React.Component<IChatListing, {}> {
 
 	public render(){
 		return (
-			<li onClick={this.handleClick}>
-				{this.props.name}
+			<li onClick={this.props.onSelect}>
+				<span>{this.props.name}</span>									
 			</li>
 		);
 	}		

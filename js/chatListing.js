@@ -9,12 +9,13 @@ var ChatListing = (function (_super) {
     __extends(ChatListing, _super);
     function ChatListing(props) {
         _super.call(this, props);
+        console.log(props);
     }
     ChatListing.prototype.handleClick = function (event) {
         this.props.onSelect(this.props.name);
     };
     ChatListing.prototype.render = function () {
-        return (React.createElement("li", {onClick: this.handleClick}, this.props.name));
+        return (React.createElement("li", {onClick: this.props.onSelect}, React.createElement("span", null, this.props.name)));
     };
     return ChatListing;
 }(React.Component));
