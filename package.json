@@ -17,6 +17,7 @@
   "dependencies": {
     "director": "~1.2.8",
     "react": "~15.1.0",
-    "react-dom": "~15.1.0"
+    "react-dom": "~15.1.0",
+    "moment": "~2.13.0"
   }
 }
