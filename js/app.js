@@ -7,7 +7,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var React = require("react");
 var ReactDOM = require("react-dom");
 var constants_1 = require("./constants");
-var chatModel_1 = require("./chatModel");
+var chatListing_1 = require("./chatListing");
 var ChatUI = (function (_super) {
     __extends(ChatUI, _super);
     function ChatUI(props) {
@@ -16,14 +16,6 @@ var ChatUI = (function (_super) {
             nowShowing: constants_1.ALL_CHATS
         };
     }
-    ChatUI.prototype.componentDidMount = function () {
-        var setState = this.setState;
-        var router = Router({
-            '/': setState.bind(this, { nowShowing: constants_1.ALL_CHATS }),
-            '/active': setState.bind(this, { nowShowing: constants_1.ACTIVE_CHAT }),
-        });
-        router.init('/');
-    };
     ChatUI.prototype.handleNewTodoKeyDown = function (event) {
         if (event.keyCode !== constants_1.ENTER_KEY) {
             return;
@@ -31,26 +23,25 @@ var ChatUI = (function (_super) {
         event.preventDefault();
         var val = ReactDOM.findDOMNode(this.refs["newField"]).value.trim();
         if (val) {
-            this.props.model.addMessage(val);
             ReactDOM.findDOMNode(this.refs["newField"]).value = '';
         }
     };
+    ChatUI.prototype.onChatSelect = function (chatToSelect, name) {
+        this.setState({ nowShowing: name });
+    };
     ChatUI.prototype.render = function () {
         var _this = this;
+        var header;
         var footer;
         var main;
-        var messages = this.props.model.messages;
-        var shownMessages = messages.filter(function (message) {
-            switch (_this.state.nowShowing) {
-                case constants_1.ACTIVE_CHAT:
-                    return true;
-                default:
-                    return true;
-            }
+        var chatItems = this.props.chatCollection.map(function (chat, index) {
+            return (React.createElement(chatListing_1.ChatListing, {key: index, name: chat.name, messages: chat.messages, onSelect: _this.onChatSelect.bind(_this, chat.name)}));
         });
-        return (React.createElement("div", null, React.createElement("header", {className: "header"}, React.createElement("h1", null, "Chat"), React.createElement("input", {ref: "newField", className: "new-message", placeholder: "Message!?", onKeyDown: function (e) { return _this.handleNewTodoKeyDown(e); }, autoFocus: true})), main, footer));
+        header = (React.createElement("header", null, React.createElement("h1", null, "Awesome Chat UI")));
+        main = (React.createElement("div", null, React.createElement("ul", {className: "chat-collection"}, chatItems), React.createElement("input", {ref: "newField", className: "new-message", placeholder: "Message!?", onKeyDown: function (e) { return _this.handleNewTodoKeyDown(e); }, autoFocus: true})));
+        return (React.createElement("div", {className: "main"}, header, main, footer));
     };
     return ChatUI;
 }(React.Component));
-var model = new chatModel_1.ChatModel('react-todos');
-ReactDOM.render(React.createElement(ChatUI, {model: model}), document.getElementsByClassName('todoapp')[0]);
+var model = constants_1.CHAT_DATA;
+ReactDOM.render(React.createElement(ChatUI, {chatCollection: model}), document.getElementById('chat-ui'));

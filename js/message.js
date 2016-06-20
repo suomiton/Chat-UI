@@ -1,6 +1,7 @@
 "use strict";
 var Message = (function () {
-    function Message(text) {
+    function Message(text, author) {
+        this.author = author;
         this.message = text;
         this.timestamp = new Date();
     }

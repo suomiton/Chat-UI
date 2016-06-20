@@ -1,24 +1,14 @@
-interface IMessage {  
+interface IMessage {    
+  author: string;
   message: string,
   timestamp: Date
 }
 
-/*interface ITodoItemProps {
-  key : string,
-  todo : ITodo;
-  editing? : boolean;
-  onSave: (val: any) => void;
-  onDestroy: () => void;
-  onEdit: ()  => void;
-  onCancel: (event : any) => void;
-  onToggle: () => void;
-}*/
-
-interface ITodoItemState {
-  editText : string
+interface IChatState {
+  editText: string;
 }
 
-interface ITodoFooterProps {
+interface IChatFooterProps {
   completedCount : number;
   onClearCompleted : any;
   nowShowing : string;
@@ -26,15 +16,23 @@ interface ITodoFooterProps {
 }
 
 
-interface IChatModel {  
-  messages: Array<IMessage>
-  addMessage(text: string): void
+interface IChatModel {    
+  name: string;
+  messages: Array<IMessage>;
+  addMessage(text: string, author: string): void;
 }
 
 interface IAppProps {
-  model : IChatModel;
+  chatCollection: Array<IChatModel>;
+}
+
+interface IChatListing {
+  key: number;
+  name: string;
+  messages: Array<IMessage>;  
+  onSelect: (name: string) => void;
 }
 
 interface IAppState { 
-  nowShowing? : string
+  nowShowing?: string;
 }

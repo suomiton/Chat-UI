@@ -464,21 +464,23 @@
 	"buffers":
 	[
 		{
-			"contents": "<!doctype html>\n<html lang=\"en\" data-framework=\"typescript\">\n	<head>\n		<meta charset=\"utf-8\">\n		<title>React • ChatUI</title>		\n	</head>\n	<body>\n		<header></header>\n		<section class=\"todoapp\"></section>\n		<footer class=\"info\">			\n		</footer>\n\n		<script src=\"https://fb.me/react-15.1.0.min.js\"></script>\n		<script src=\"https://fb.me/react-dom-15.1.0.min.js\"></script>\n\n		\n		<script type=\"text/javascript\" src=\"node_modules/react/dist/react-with-addons.js\"></script>\n		<script type=\"text/javascript\" src=\"node_modules/classnames/index.js\"></script>\n		<script type=\"text/javascript\" src=\"node_modules/director/build/director.js\"></script>\n\n		<script type=\"text/javascript\" src=\"static/bundle.js\"></script>\n	</body>\n</html>\n",
 			"file": "index.html",
-			"file_size": 678,
-			"file_write_time": 1466344512000000,
 			"settings":
 			{
-				"buffer_size": 720,
-				"line_ending": "Unix"
+				"buffer_size": 377,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 227.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -502,7 +504,11 @@
 	},
 	"console":
 	{
-		"height": 403.0
+		"height": 403.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
 	},
 	"distraction_free":
 	{
@@ -513,6 +519,10 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/suomiton/projects/gits/chatui"
+	],
 	"file_history":
 	[
 		"/Users/suomiton/projects/gits/chatui/index.js",
@@ -734,9 +744,10 @@
 				{
 					"buffer": 0,
 					"file": "index.html",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 720,
+						"buffer_size": 377,
 						"regions":
 						{
 						},
@@ -756,6 +767,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -796,10 +808,16 @@
 	{
 		"height": 0.0
 	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
 	"output.xdebug":
 	{
 		"height": 100.0
 	},
+	"pinned_build_system": "",
+	"project": "chatui.sublime-project",
 	"replace":
 	{
 		"height": 64.0
@@ -808,6 +826,7 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -832,15 +851,32 @@
 	"select_project":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
 		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
 	},
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 216.0,
-	"status_bar_visible": true
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }
