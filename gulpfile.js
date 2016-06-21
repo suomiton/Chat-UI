@@ -10,17 +10,12 @@ var gulp = require('gulp'),
   mergeStream = require('merge-stream'),
   minifyCss = require('gulp-minify-css'),
   uglify = require('gulp-uglify'),
-  gulpif = require('gulp-if'),
-  chmod = require('gulp-chmod'),
   ts = require('gulp-typescript'),
   tsProject = ts.createProject('./js/tsconfig.json');
 
-var browserSyncActive = false;
-
 var basePath = './';
 
-var paths = {
-  //vendorRoot: 	basePath + 'app/components/',
+var paths = {  
   sass: 		    basePath + 'sass/',
   css:          basePath + 'static/css/',
   scripts:      basePath + 'js/',
@@ -91,13 +86,7 @@ gulp.task('minifyCss', function() {
     .pipe(gulp.dest(paths.css));
 });
 
-gulp.task('watch', ['default'], function() {
-  browserSyncActive = true;
-
-  /*browserSync.init({
-    proxy: "homeinstead.local.org"
-  });*/
-
+gulp.task('watch', ['default'], function() {  
   gulp.watch(paths.scripts + '*.js', ['scripts']);
   gulp.watch(paths.sass + '**/*.scss', ['styles']);  
 });
