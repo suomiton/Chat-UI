@@ -11,7 +11,9 @@ var gulp = require('gulp'),
   minifyCss = require('gulp-minify-css'),
   uglify = require('gulp-uglify'),
   gulpif = require('gulp-if'),
-  chmod = require('gulp-chmod');
+  chmod = require('gulp-chmod'),
+  ts = require('gulp-typescript'),
+  tsProject = ts.createProject('./js/tsconfig.json');
 
 var browserSyncActive = false;
 
@@ -50,7 +52,14 @@ gulp.task('clean', function() {
   	.pipe(clean());
 });
 
-gulp.task('scripts', function() {
+gulp.task('typescript', function() {
+  var tsResult = tsProject.src()
+        .pipe(ts(tsProject));
+ 
+  return tsResult.js.pipe(gulp.dest(paths.scripts));
+});
+
+gulp.task('scripts', ['typescript'],function() {
   function browserifyMe(bundleConfig) {
     var b = browserify(bundleConfig);
     return b.bundle()
@@ -79,7 +88,7 @@ gulp.task('styles', function() {
 gulp.task('minifyCss', function() {  
   return gulp.src(paths.css + 'styles.css')     
     .pipe(minifyCss({processImport: false}))    
-    .pipe(gulp.dest(paths.dist));
+    .pipe(gulp.dest(paths.css));
 });
 
 gulp.task('watch', ['default'], function() {
@@ -89,8 +98,8 @@ gulp.task('watch', ['default'], function() {
     proxy: "homeinstead.local.org"
   });*/
 
-  //gulp.watch(paths.scripts + '/*.js', ['scripts']);
-  gulp.watch(paths.sass + '/**/*.scss', ['styles']);  
+  gulp.watch(paths.scripts + '*.js', ['scripts']);
+  gulp.watch(paths.sass + '**/*.scss', ['styles']);  
 });
 
 gulp.task('default', ['scripts', 'styles']);
