@@ -15,7 +15,6 @@
   "author": "Toni Suominen",
   "license": "ISC",
   "dependencies": {
-    "director": "~1.2.8",
     "react": "~15.1.0",
     "react-dom": "~15.1.0"
   },
@@ -35,6 +34,7 @@
     "gulp-util": "~3.0.6",
     "lodash": "~3.9.3",
     "merge-stream": "~0.1.7",
-    "vinyl-source-stream": "~1.1.0"
+    "vinyl-source-stream": "~1.1.0",
+    "gulp-typescript": "~2.13.6"
   }
 }
