@@ -4,6 +4,7 @@ var ChatModel = (function () {
     function ChatModel(name) {
         this.name = name;
         this.messages = new Array();
+        this.participants = new Array();
         this.messages.push(new message_1.Message('Lorem ipsum dolor', 'Toni'));
         this.messages.push(new message_1.Message('Lorem ipsum dolor 2', 'Muusa'));
     }

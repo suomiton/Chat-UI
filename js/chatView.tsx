@@ -5,22 +5,21 @@ import { ALL_CHATS, ACTIVE_CHAT } from "./constants";
 import { ChatListing } from "./chatListing";
 import { MessageView } from "./messageView";
 
-class ChatView extends React.Component<IAppProps, IAppState> {		
-	constructor(props: IAppProps) {
-		super(props);		
-		this.state = props.state;
+class ChatView extends React.Component<IChatView, {}> {		
+	constructor(props: IChatView) {
+		super(props);				
 	}	
 
-	public onChatSelect(chatToSelect: IChatModel, name: string): void {        
-	    this.state = { nowShowing: ACTIVE_CHAT, chatId: name };
-		this.props.onStateChange(this.state);
+	public onChatSelect(chatToSelect: IChatModel, name: string): void {        	    
+		this.props.onStateChange(name);
 	}
 
 	public render() {
 		let component = null;
+		const chatId = this.props.chatId;
 
-		if(this.state.chatId){
-			const selectedChat = this.props.chatCollection.filter((chat) => { return chat.name === this.state.chatId });      
+		if(chatId){
+			const selectedChat = this.props.chatCollection.filter((chat) => { return chat.name === chatId });      
 			component = selectedChat[0].messages.map((item, index) => {
 				return (
 					<div className="message-container">					

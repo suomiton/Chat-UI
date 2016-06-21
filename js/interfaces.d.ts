@@ -5,27 +5,21 @@ interface IMessage {
   timestamp: Date
 }
 
-interface IChatState {
-  editText: string;
-}
-
-interface IChatFooterProps {
-  completedCount : number;
-  onClearCompleted : any;
-  nowShowing : string;
-  count : number;
-}
-
 interface IChatModel {    
   name: string;
+  participants: Array<string>;
   messages: Array<IMessage>;
   addMessage: (text: string, author: string) => void;
 }
 
 interface IAppProps {
+  chatCollection: Array<IChatModel>;  
+}
+
+interface IChatView {
   chatCollection: Array<IChatModel>;
-  state?: IAppState;
-  onStateChange?: (state: IAppState) => void;
+  chatId?: string;
+  onStateChange?: (chatId: string) => void; 
 }
 
 interface IChatListing {
@@ -37,6 +31,7 @@ interface IChatListing {
 interface IAppState { 
   nowShowing?: string;
   chatId?: string;
+  messages?: number;
 }
 
 interface IMessageView {  
