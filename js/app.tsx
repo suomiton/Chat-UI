@@ -4,6 +4,7 @@ import * as ReactDOM from "react-dom";
 import { ALL_CHATS, ACTIVE_CHAT, ENTER_KEY, ESCAPE_KEY, CHAT_DATA } from "./constants";
 import { ChatModel } from "./chatModel";
 import { ChatView } from "./chatView";
+import { ChatFactory } from "./chatFactory";
 
 declare var Router;
 
@@ -113,7 +114,7 @@ class ChatUI extends React.Component<IAppProps, IAppState> {
   }
 }
  
-var model = CHAT_DATA;
+var model = ChatFactory.createModel();
 
 ReactDOM.render(
   <ChatUI chatCollection={model}/>,

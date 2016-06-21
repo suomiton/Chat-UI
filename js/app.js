@@ -8,6 +8,7 @@ var React = require("react");
 var ReactDOM = require("react-dom");
 var constants_1 = require("./constants");
 var chatView_1 = require("./chatView");
+var chatFactory_1 = require("./chatFactory");
 var ChatUI = (function (_super) {
     __extends(ChatUI, _super);
     function ChatUI(props) {
@@ -43,7 +44,6 @@ var ChatUI = (function (_super) {
         var chat = this.getChatModel(this.state.chatId);
         var input = ReactDOM.findDOMNode(this.refs["newMessage"]);
         var val = input.value.trim();
-        console.log(val);
         if (val) {
             chat.addMessage(val, 'You');
             input.value = '';
@@ -70,5 +70,5 @@ var ChatUI = (function (_super) {
     };
     return ChatUI;
 }(React.Component));
-var model = constants_1.CHAT_DATA;
+var model = chatFactory_1.ChatFactory.createModel();
 ReactDOM.render(React.createElement(ChatUI, {chatCollection: model}), document.getElementById('chat-ui'));

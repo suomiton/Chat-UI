@@ -3,8 +3,7 @@ import * as ReactDOM from "react-dom";
 
 class ChatListing extends React.Component<IChatListing, {}> {
 	constructor(props: IChatListing) {
-		super(props);
-		console.log(props);
+		super(props);		
 	}
 
 	public handleClick(event: __React.MouseEvent) {
