@@ -21,14 +21,16 @@ var ChatView = (function (_super) {
         var chatId = this.props.chatId;
         if (chatId) {
             var selectedChat = this.props.chatCollection.filter(function (chat) { return chat.name === chatId; });
-            component = selectedChat[0].messages.map(function (item, index) {
-                return (React.createElement("div", {className: "message-container"}, React.createElement(messageView_1.MessageView, {key: index, author: item.author, message: item.message, timestamp: item.timestamp})));
+            var listItems = selectedChat[0].messages.map(function (item, index) {
+                return (React.createElement(messageView_1.MessageView, {key: index, author: item.author, message: item.message, timestamp: item.timestamp}));
             });
+            component = (React.createElement("div", {className: "clearfix"}, listItems));
         }
         else {
-            component = this.props.chatCollection.map(function (chat, index) {
-                return (React.createElement("ul", {className: "chat-collection"}, React.createElement(chatListing_1.ChatListing, {key: index, name: chat.name, onSelect: _this.onChatSelect.bind(_this, chat, chat.name)})));
-            });
+            var listItems = (this.props.chatCollection.map(function (chat, index) {
+                return (React.createElement(chatListing_1.ChatListing, {key: index, name: chat.name, participants: chat.participants.length, onSelect: _this.onChatSelect.bind(_this, chat, chat.name)}));
+            }));
+            component = (React.createElement("ul", {className: "chat-collection"}, listItems));
         }
         return (React.createElement("div", null, component));
     };

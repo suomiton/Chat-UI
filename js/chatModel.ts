@@ -12,7 +12,7 @@ class ChatModel implements IChatModel {
 	}	
   	
   	addMessage(text: string, author: string): void {
-  		this.messages.push(new Message(text, author));
+  		this.messages.push(new Message(text, author));		
   	}
 }
 

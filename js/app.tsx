@@ -1,20 +1,19 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import { ALL_CHATS, ACTIVE_CHAT, ENTER_KEY, ESCAPE_KEY, CHAT_DATA } from "./constants";
+import { ENTER_KEY } from "./constants";
 import { ChatModel } from "./chatModel";
 import { ChatView } from "./chatView";
 import { ChatFactory } from "./chatFactory";
 
-declare var Router;
+declare var emojify;
 
 class ChatUI extends React.Component<IAppProps, IAppState> {
   public state : IAppState;      
 
   constructor(props : IAppProps) {
     super(props);
-    this.state = {
-      nowShowing: ALL_CHATS,
+    this.state = {      
       chatId: null,
       messages: 0      
     };        
@@ -37,12 +36,17 @@ class ChatUI extends React.Component<IAppProps, IAppState> {
     if (name) {
       this.state.chatId = name;
       this.state.messages = this.getChatModel(name).messages.length;
+      this.setState(this.state);    
+
+      setTimeout(function() {
+        window.scrollTo(0,document.body.scrollHeight);
+        emojify.run();
+      });
     } else {
       this.state.chatId = null;
       this.state.messages = 0;
-    }
-    
-    this.setState(this.state);    
+      this.setState(this.state);    
+    }    
   }  
 
   public addMessage() {
@@ -55,7 +59,11 @@ class ChatUI extends React.Component<IAppProps, IAppState> {
       input.value = '';
       this.state.messages++;
       this.setState(this.state);
-    }    
+      setTimeout(function() {
+        window.scrollTo(0,document.body.scrollHeight);
+        emojify.run();
+      });
+    }
   }
 
   public render() {
@@ -68,11 +76,16 @@ class ChatUI extends React.Component<IAppProps, IAppState> {
     );
 
     if(this.state.chatId) {
+      const chat = this.getChatModel(this.state.chatId); 
       header = (
         <header className="chat-header">
-          <span className="back-button"><button type="button" class="btn" onClick={this.onStateChange.bind(this, null)}>Back</button></span>
+          <span className="back-button">
+            <button type="button" className="btn btn-primary" onClick={this.onStateChange.bind(this , null)}>Back</button>
+          </span>
           <span className="chat-title">{this.state.chatId}</span>
-          <span className="participants">{this.getChatModel(this.state.chatId).participants.length}</span>          
+          <span className="participants" title={chat.participants.join(', ')}>
+            {chat.participants.length} <i className="glyphicon glyphicon-user"></i>
+          </span>          
         </header>
       );
     } else {
@@ -85,27 +98,29 @@ class ChatUI extends React.Component<IAppProps, IAppState> {
 
     if(this.state.chatId) {
       footer = (
-        <div className="input-message">
-          <div className="control">
-            <input type="text" 
-              ref="newMessage" 
-              autoFocus={true} 
-              className="control-input" 
-              onKeyDown={ e => this.handleNewMessageKeyDown(e) } />
+        <footer>
+          <div className="input-message row">
+            <div className="control col-xs-8">
+              <input type="text"
+                ref="newMessage" 
+                autoFocus={true} 
+                className="form-control" 
+                onKeyDown={ e => this.handleNewMessageKeyDown(e) } />
+            </div>
+            <div className="control-button col-xs-4"> 
+              <button type="button" 
+                className="btn btn-primary" 
+                onClick={this.addMessage.bind(this)}>
+                Submit
+              </button>
+            </div>
           </div>
-          <div className="control-button"> 
-            <button type="button" 
-              className="btn" 
-              onClick={this.addMessage.bind(this)}>
-              Submit
-            </button>
-          </div>
-        </div>
+        </footer>
       );
     }
 
     return (
-      <div className="container-fluid main">
+      <div className="main">
         {header}
         {chatView}
         {footer}

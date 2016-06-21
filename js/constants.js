@@ -1,5 +1,4 @@
 "use strict";
-var chatModel_1 = require('./chatModel');
 var ALL_CHATS = 'all';
 exports.ALL_CHATS = ALL_CHATS;
 var ACTIVE_CHAT = 'active';
@@ -8,5 +7,3 @@ var ENTER_KEY = 13;
 exports.ENTER_KEY = ENTER_KEY;
 var ESCAPE_KEY = 27;
 exports.ESCAPE_KEY = ESCAPE_KEY;
-var CHAT_DATA = [new chatModel_1.ChatModel('Lorem ipsum'), new chatModel_1.ChatModel('Lorem ipsum 2')];
-exports.CHAT_DATA = CHAT_DATA;

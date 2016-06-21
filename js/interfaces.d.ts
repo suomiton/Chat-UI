@@ -25,11 +25,11 @@ interface IChatView {
 interface IChatListing {
   key: number;
   name: string;  
+  participants: number;
   onSelect: (name: string) => void;  
 }
 
-interface IAppState { 
-  nowShowing?: string;
+interface IAppState {   
   chatId?: string;
   messages?: number;
 }

@@ -1,0 +1,30 @@
+.message-container {
+	.author {
+		font-weight: 600;
+		color: #337ab7;
+	}
+
+	&.sender {
+		background-color: $message-bg;
+		padding: 15px;
+		margin-bottom: 15px;
+		display: inline-block;
+		float: left;
+		clear: both;
+		min-width: 175px;
+
+		border-radius: 15px;
+		border-top-left-radius: 0;
+
+		&--you {
+			background-color: $own-message-bg;
+			float: right;
+			border-top-left-radius: 15px;
+			border-bottom-right-radius: 0;
+
+			.author {
+				text-align: right;
+			}
+		}
+	}		
+}

@@ -6,10 +6,26 @@ class MessageView extends React.Component<IMessage, {}> {
 		super(props);		
 	}	
 
-	public render(){
+	public renderMsg(message: string): any {
+		if(message.indexOf('http') === 0) {
+			return (
+				<img src={message} alt="" />
+			);
+		}
+		return message;
+	}
+
+	public render() {
+		let cssClass = ['message-container', 'sender'];
+
+		if(this.props.author === 'You') {
+			cssClass.push('sender--you');
+		}				
+
 		return (
-			<div className="message">
-				<span>{this.props.message}</span>									
+			<div className={cssClass.join(' ')}>
+				<div className="author">{this.props.author}</div>
+				<div className="text">{this.renderMsg(this.props.message)}</div>									
 			</div>
 		);
 	}		

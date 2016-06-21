@@ -13,7 +13,8 @@ class ChatListing extends React.Component<IChatListing, {}> {
 	public render(){
 		return (
 			<li onClick={this.props.onSelect}>
-				<span>{this.props.name}</span>									
+				<span>{this.props.name}</span>		
+				<span>{this.props.participants} <i className="glyphicon glyphicon-user"></i></span>							
 			</li>
 		);
 	}		

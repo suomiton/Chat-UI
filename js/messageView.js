@@ -10,8 +10,18 @@ var MessageView = (function (_super) {
     function MessageView(props) {
         _super.call(this, props);
     }
+    MessageView.prototype.renderMsg = function (message) {
+        if (message.indexOf('http') === 0) {
+            return (React.createElement("img", {src: message, alt: ""}));
+        }
+        return message;
+    };
     MessageView.prototype.render = function () {
-        return (React.createElement("div", {className: "message"}, React.createElement("span", null, this.props.message)));
+        var cssClass = ['message-container', 'sender'];
+        if (this.props.author === 'You') {
+            cssClass.push('sender--you');
+        }
+        return (React.createElement("div", {className: cssClass.join(' ')}, React.createElement("div", {className: "author"}, this.props.author), React.createElement("div", {className: "text"}, this.renderMsg(this.props.message))));
     };
     return MessageView;
 }(React.Component));

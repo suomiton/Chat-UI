@@ -20,21 +20,34 @@ class ChatView extends React.Component<IChatView, {}> {
 
 		if(chatId){
 			const selectedChat = this.props.chatCollection.filter((chat) => { return chat.name === chatId });      
-			component = selectedChat[0].messages.map((item, index) => {
+			const listItems = selectedChat[0].messages.map((item, index) => {
 				return (
-					<div className="message-container">					
-						<MessageView key={index} author={item.author} message={item.message} timestamp={item.timestamp} />
-					</div>
-				);
-			});     
+					<MessageView key={index} author={item.author} message={item.message} timestamp={item.timestamp} />
+				)
+			});  
+
+			component = (
+				<div className="clearfix">					
+					{listItems}
+				</div>
+			);			
 		} else {
-			component = this.props.chatCollection.map((chat, index) => {
-				return (
-					<ul className="chat-collection">
-						<ChatListing key={index} name={chat.name} onSelect={this.onChatSelect.bind(this, chat, chat.name)} />
-					</ul>
-				);
-			});
+			const listItems = (
+				this.props.chatCollection.map((chat, index) => {
+					return (
+						<ChatListing key={index} 
+							name={chat.name} 
+							participants={chat.participants.length}
+							onSelect={this.onChatSelect.bind(this, chat, chat.name)} />					
+					);
+				})
+			);
+
+			component = ( 
+				<ul className="chat-collection">
+					{listItems}
+				</ul>
+			);
 		}
 		return (
 			<div>
