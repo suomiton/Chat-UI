@@ -1,18 +1,18 @@
-import { Message } from "./message";
+import { MessageModel } from "./messageModel";
 
 class ChatModel implements IChatModel {	
 	name: string;
 	participants: Array<string>;
-	messages: Array<IMessage>;
+	messages: Array<IMessageModel>;
 
 	constructor(name: string) {		
 		this.name = name;		
-		this.messages = new Array<IMessage>();	
+		this.messages = new Array<IMessageModel>();	
 		this.participants = new Array<string>();		
 	}	
   	
   	addMessage(text: string, author: string): void {
-  		this.messages.push(new Message(text, author));		
+  		this.messages.push(new MessageModel(text, author));		
   	}
 }
 

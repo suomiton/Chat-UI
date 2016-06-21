@@ -22,7 +22,7 @@ var ChatView = (function (_super) {
         if (chatId) {
             var selectedChat = this.props.chatCollection.filter(function (chat) { return chat.name === chatId; });
             var listItems = selectedChat[0].messages.map(function (item, index) {
-                return (React.createElement(messageView_1.MessageView, {key: index, author: item.author, message: item.message, timestamp: item.timestamp}));
+                return (React.createElement(messageView_1.MessageView, {key: index, author: item.author, message: item.message}));
             });
             component = (React.createElement("div", {className: "clearfix"}, listItems));
         }

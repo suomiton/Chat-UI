@@ -1,7 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import { ALL_CHATS, ACTIVE_CHAT } from "./constants";
 import { ChatListing } from "./chatListing";
 import { MessageView } from "./messageView";
 
@@ -22,7 +21,7 @@ class ChatView extends React.Component<IChatView, {}> {
 			const selectedChat = this.props.chatCollection.filter((chat) => { return chat.name === chatId });      
 			const listItems = selectedChat[0].messages.map((item, index) => {
 				return (
-					<MessageView key={index} author={item.author} message={item.message} timestamp={item.timestamp} />
+					<MessageView key={index} author={item.author} message={item.message} />
 				)
 			});  
 

@@ -19,7 +19,7 @@ class ChatUI extends React.Component<IAppProps, IAppState> {
     };        
   }
 
-  public handleNewMessageKeyDown(event : __React.KeyboardEvent) {
+  public handleNewMessageKeyDown(event : __React.KeyboardEvent): void {
     if (event.keyCode !== ENTER_KEY) {
       return;
     }
@@ -49,7 +49,7 @@ class ChatUI extends React.Component<IAppProps, IAppState> {
     }    
   }  
 
-  public addMessage() {
+  public addMessage(): void {
     const chat = this.getChatModel(this.state.chatId);
     const input = ReactDOM.findDOMNode<HTMLInputElement>(this.refs["newMessage"]);
     var val = input.value.trim();    
@@ -57,8 +57,10 @@ class ChatUI extends React.Component<IAppProps, IAppState> {
     if(val) {
       chat.addMessage(val, 'You');
       input.value = '';
+      
       this.state.messages++;
       this.setState(this.state);
+
       setTimeout(function() {
         window.scrollTo(0,document.body.scrollHeight);
         emojify.run();

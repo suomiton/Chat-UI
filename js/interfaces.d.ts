@@ -1,14 +1,13 @@
-interface IMessage { 
+interface IMessageModel { 
   key?: number;   
   author: string;
-  message: string,
-  timestamp: Date
+  message: string;
 }
 
 interface IChatModel {    
   name: string;
   participants: Array<string>;
-  messages: Array<IMessage>;
+  messages: Array<IMessageModel>;
   addMessage: (text: string, author: string) => void;
 }
 
@@ -36,5 +35,5 @@ interface IAppState {
 
 interface IMessageView {  
   key: number;
-  message: IMessage
+  message: IMessageModel
 }

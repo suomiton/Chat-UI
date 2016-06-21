@@ -1,5 +1,5 @@
 "use strict";
-var message_1 = require("./message");
+var messageModel_1 = require("./messageModel");
 var ChatModel = (function () {
     function ChatModel(name) {
         this.name = name;
@@ -7,7 +7,7 @@ var ChatModel = (function () {
         this.participants = new Array();
     }
     ChatModel.prototype.addMessage = function (text, author) {
-        this.messages.push(new message_1.Message(text, author));
+        this.messages.push(new messageModel_1.MessageModel(text, author));
     };
     return ChatModel;
 }());

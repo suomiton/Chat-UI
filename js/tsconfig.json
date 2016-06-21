@@ -23,8 +23,12 @@
         "./typings/index.d.ts",
         "./interfaces.d.ts",
         "./constants.ts",        
-        "./message.ts",
-        "./chatModel.ts",        
+        "./messageModel.ts",
+        "./messageView.tsx",
+        "./chatModel.ts",
+        "./chatView.tsx",
+        "./chatListing.tsx",
+        "./chatFactory.ts",        
         "./app.tsx"       
     ],
     "exclude": []

@@ -1,8 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-class MessageView extends React.Component<IMessage, {}> {
-	constructor(props: IMessage) {
+class MessageView extends React.Component<IMessageModel, {}> {
+	constructor(props: IMessageModel) {
 		super(props);		
 	}	
 
